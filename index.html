@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tp-Ben-Damon-formulaire</title>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css"/>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="wrapper_first">
+		<header>
+			<h1>inscription</h1>
+		</header>
+		<section class="main">
+			<form id="content" action="">
+				<h2>Contactez-nous</h2>
+				<ul>
+					<li>
+						<label for="nom" class="focusing">Nom</label>
+						<input type="text" id="nom" required placeholder="Nom">
+					</li>
+					<li>
+						<label for="email" class="focusing">Email</label>
+						<input type="email" id="email" required placeholder="email@hotmail.com">
+					</li>
+					<li>
+						<label for="telephone">Téléphone</label>
+						<input type="tel" id="telephone" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+					</li>
+					<li>
+						<label for="code-postal">Code Postal</label>
+						<input type="postal" id="code-postal" required placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
+					</li>
+				</ul>
+			<input type="submit" value="Soumettre" />
+		</form>
+		</section>
+	</div>
+</body>
+</html>
