@@ -1,27 +1,9 @@
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-    background: transparent;
-    border: 0;
-    font-size: 100%;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: text-top;
-}
-a:link,
-a:visited,
-a:hover,
-a:focus{
-	text-decoration: none;
-}
-
-*{
-	box-sizing: border-box;
-}
-
 aside, div, section, header, footer, nav {
 	display: block;
 }
-
+*{
+	box-sizing: border-box;
+}
 header{
 	width: 100%;
 	background-color: red;
@@ -47,14 +29,23 @@ h1{
 #wrapper_first section li{
 	height: 40px;
 }
+input, select, textarea{
+	border-radius: 5px;
+}
 input[type=text], input[type=tel],input[type=email], input[type=number],input[type=textarea]{
 	padding-left: 5px;
 	margin: 0;
+	height: 25px;
+	letter-spacing: 3px;
 }
 input[type=radio], input[type=checkbox]{
 	display: inline-block;
 }
 input[type=submit]{
+	font-family: 'Indie Flower', cursive;
+	font-size:1.5em;
+	letter-spacing: 5px;
+	text-transform: uppercase; 
 	display: block;
 	position: relative;
 	text-align: center;
@@ -62,8 +53,12 @@ input[type=submit]{
 	margin-right: auto;
 	padding: 6px 0;
 }
+label{
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.3em;
+}
 label.label_styling{
-	padding-left: 5px;
+	padding-left: 10px;
 	margin: 0;
 }
 aside ul{
@@ -72,6 +67,9 @@ aside ul{
 aside{
 	width: 100%;
 	text-align: center;
+}
+aside:nth-of-type(2){
+	 z-index: 999;
 }
 footer{
 	position: relative;
