@@ -8,8 +8,31 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+	<style>
+	    img{
+	        width: 100px;
+	        height: 100px;
+	    }
+	</style>
 </head>
 <body>
+	<header>
+	    <nav>
+	        <ul>
+	            <li><img src="images/square.png" alt="logo"></li>
+	            <li>
+	                <form>
+	                    <input type="search">
+	                    <input type="submit" value="rechercher">
+	                </form>
+	            </li>
+	            <li><a href="">categgorie 1</a></li>
+	            <li><a href="">categgorie 2</a></li>
+	            <li><a href="">categgorie 3</a></li>
+	            <li><a href=""><img src="images/square.png" alt="fb"></a></li>
+	        </ul>
+	    </nav>
+	</header>
 	<div id="wrapper_first">
 		<header>
 			<h1>page en développement</h1>
@@ -57,16 +80,63 @@
 		                </select>
 					</li>
 					<li>
-						<label for="non_fumeur">Non Fumeur</label>
 						<input type="radio" name="fume" id="non_fumeur" value=""/>
-						<label for="fumeur">Fumeur</label>
+						<label for="non_fumeur">Non Fumeur</label>
 						<input type="radio" name="fume" id="fumeur" value=""/>
+						<label for="fumeur">Fumeur</label>
+					</li>
+					<li>
+						<input type="checkbox" name="accept" id="accept" value=""/>
+						<label for="accept">Je déclare avoir mis des informations valide</label>
+					</li>
+					<li>
+						<input type="checkbox" name="recevoir" id="recevoir" value=""/>
+						<label for="recevoir">Je veux recevoir des informations supplémentaires par courriel</label>
 					</li>
 				</ul>
 						
 			<input type="submit" value="Soumettre" />
 		</form>
 		</section>
+		<aside>
+            <ul>
+                <li>
+                    <p class="jour">dimanche</p>
+                    <p class="heure">8h00-15h00</p>
+                </li>
+                <li>
+                    <p class="jour">lundi</p>
+                    <p class="heure">8h00-17h00</p>
+                </li>
+                <li>
+                    <p class="jour">mardi</p>
+                    <p class="heure">8h00-17h00</p>
+                </li>
+                <li>
+                    <p class="jour">mercredi</p>
+                    <p class="heure">8h00-17h00</p>
+                </li>
+                <li>
+                    <p class="jour">jeudi</p>
+                    <p class="heure">8h00-18h00</p>
+                </li>
+                <li>
+                    <p class="jour">vendredi</p>
+                    <p class="heure">8h00-18h00</p>
+                </li>
+                <li>
+                    <p class="jour">samedi</p>
+                    <p class="heure">8h00-15h00</p>
+                </li>
+            </ul>
+        </aside>
+        <aside>
+        <a href="">lien vers google map</a>
+    	</aside>
 	</div>
+<footer>
+    <p>&copy;copyright benjamin et damon</p>
+    <p>pour plus dinformation : facebook</p>
+</footer>
 </body>
 </html>
