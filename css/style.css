@@ -1,0 +1,77 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: text-top;
+}
+a:link,
+a:visited,
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+aside, div, section, header, footer, nav {
+	display: block;
+}
+
+header{
+	width: 100%;
+	background-color: red;
+	height: 60px;
+}
+header nav{
+	display: none;
+}
+#wrapper_first header{
+	text-align: center;
+	height: 40px;
+	font-size: 40px;
+	background-color: transparent;
+	padding-bottom: 5px;
+}
+#wrapper_first section{
+	width: 100%;
+}
+#wrapper_first section li{
+	height: 40px;
+}
+#wrapper_first label{
+	// width: 30%;
+	display: inline-block;
+	// margin-left: 20px;
+}
+input[type=text], input[type=tel],input[type=email], input[type=number]{
+	// width: 60%;
+	padding: 0;
+	margin: 0;
+}
+input[type=radio], input[type=checkbox]{
+	display: inline-block;
+	margin-left: 20px;
+}
+input[type=submit]{
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: 40px auto;
+	// width: 60%;
+}
+aside ul{
+	display: none;
+}
+aside{
+	width: 100%;
+	text-align: center;
+}
+footer{
+	position: relative;
+	text-align: center;
+}

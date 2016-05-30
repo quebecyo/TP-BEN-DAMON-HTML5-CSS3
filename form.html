@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Tp-Ben-Damon-formulaire</title>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="css/initialize.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -35,35 +36,36 @@
 	</header>
 	<div id="wrapper_first">
 		<header>
-			<h1>page en développement</h1>
+			<h1>Réservation</h1>
 		</header>
 		<section class="main">
 			<form id="content" action="">
 				<h2>Contactez-nous</h2>
 				<ul>
 					<li>
-						<label for="nom" >Nom</label>
-						<input type="text" id="nom" required placeholder="Nom">
+						<label for="nom" class="col col-xs-3 col-md-4 col-lg-5">Nom</label>
+						<input type="text" id="nom" required placeholder="Nom" class="col col-xs-9 col-md-8 col-lg-7">
 					</li>
 					<li>
-						<label for="prenom" >Prenom</label>
-						<input type="text" id="prenom" required placeholder="Prenom">
+						<label for="prenom" class="col col-xs-3 col-md-4 col-lg-5">Prenom</label>
+						<input type="text" id="prenom" required placeholder="Prenom" class="col col-xs-9 col-md-8 col-lg-7">
 					</li>
 					<li>
-						<label for="telephone">Téléphone</label>
-						<input type="tel" id="telephone" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+						<label for="telephone" class="col col-xs-3 col-md-4 col-lg-5">Téléphone</label>
+						<input type="tel" id="telephone" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" class="col col-xs-9 col-md-8 col-lg-7">
 					</li>
 					<li>
-						<label for="nombre" >Nombre de personnes</label>
-						<input type="number" id="nombre" required min="1" max="30">
+						<label for="nombre" class="col col-xs-3 col-md-4 col-lg-5">Nombre de personnes</label>
+						<input type="number" id="nombre" required min="1" max="30" class="col col-xs-9 col-md-8 col-lg-7">
 					</li>
 					<li>
-						<label for="email" >Email</label>
-						<input type="email" id="email" required placeholder="email@hotmail.com">
+						<label for="email" class="col col-xs-3 col-md-4 col-lg-5">Email</label>
+						<input type="email" id="email" required placeholder="email@hotmail.com" class="col col-xs-9 col-md-8 col-lg-7">
 					</li>
 					<li>
-						<label for="dej">Type de repas</label>
-		                <input type="text" list="type_repas" id="repas" placeholder="Déjeuner , Dîner, etc">
+						<label for="dej" class="col col-xs-3 col-md-4 col-lg-5">Type de repas</label>
+		                <input type="text" list="type_repas" id="repas" placeholder="Déjeuner , Dîner, etc" class="col col-xs-9 col-md-8 col-lg-7">
+
 		                <datalist id="type_repas">
 		                    <option>Déjeuner</option>
 		                    <option>Brunch</option>
@@ -73,31 +75,35 @@
 	                </li>
 					
 					<li>
-						<label>Emplacement</label>					
-						<select>
+						<label class="col col-xs-3 col-md-4 col-lg-5">Emplacement</label>					
+						<select class="col col-xs-9 col-md-8 col-lg-7">
 		                    <option>Terasse</option>
 		                    <option>Intérieur</option>
 		                </select>
 					</li>
 					<li>
-						<input type="radio" name="fume" id="non_fumeur" value=""/>
-						<label for="non_fumeur">Non Fumeur</label>
-						<input type="radio" name="fume" id="fumeur" value=""/>
-						<label for="fumeur">Fumeur</label>
+						<input type="radio" name="fume" id="non_fumeur" value="" class="col col-xs-1 col-md-1 col-lg-1"/>
+						<label for="non_fumeur" class="col col-xs-10 col-md-10 col-lg-10">Non Fumeur</label>
 					</li>
 					<li>
-						<input type="checkbox" name="accept" id="accept" value=""/>
-						<label for="accept">Je déclare avoir mis des informations valide</label>
+						<input type="radio" name="fume" id="fumeur" value="" class="col col-xs-1 col-md-1 col-lg-1"/>
+						<label for="fumeur" class="col col-xs-10 col-md-10 col-lg-10">Fumeur</label>
 					</li>
 					<li>
-						<input type="checkbox" name="recevoir" id="recevoir" value=""/>
-						<label for="recevoir">Je veux recevoir des informations supplémentaires par courriel</label>
+						<input type="checkbox" name="accept" id="accept" value="" class="col col-xs-1 col-md-1 col-lg-1"/>
+						<label for="accept" class="col col-xs-10 col-md-10 col-lg-10">Je déclare avoir mis des informations valide</label>
 					</li>
+					<li>
+						<input type="checkbox" name="recevoir" id="recevoir" value="" class="col col-xs-1 col-md-1 col-lg-1"/>
+						<label for="recevoir" class="col col-xs-10 col-md-10 col-lg-10">Recevoir des informations supplémentaires</label>
+					</li>
+					
 				</ul>
-						
-			<input type="submit" value="Soumettre" />
+			<input type="submit" value="Soumettre" class="col col-xs-12 col-md-6 col-lg-3"/>	
+				
 		</form>
 		</section>
+	</div>
 		<aside>
             <ul>
                 <li>
@@ -131,9 +137,9 @@
             </ul>
         </aside>
         <aside>
-        <a href="">lien vers google map</a>
+        	<a href="">lien vers google map</a>
     	</aside>
-	</div>
+	
 <footer>
     <p>&copy;copyright benjamin et damon</p>
     <p>pour plus dinformation : facebook</p>
