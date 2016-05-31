@@ -6,7 +6,7 @@ aside, div, section, header, footer, nav {
 }
 header{
 	width: 100%;
-	background-color: red;
+	background-color: white;
 	height: 60px;
 }
 header nav{
@@ -15,6 +15,14 @@ header nav{
 h1{
 	padding: 10px;
 	font-size: 0.8em;
+	color: white;
+}
+body{
+	font-family: 'Indie Flower', cursive;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 #wrapper_first header{
 	text-align: center;
@@ -27,22 +35,21 @@ h1{
 	width: 100%;
 }
 #wrapper_first section li{
-	height: 40px;
+	height: 60px;
 }
 input, select, textarea{
 	border-radius: 5px;
+	font-size: 1.2em;
 }
 input[type=text], input[type=tel],input[type=email], input[type=number],input[type=textarea]{
 	padding-left: 5px;
 	margin: 0;
-	height: 25px;
-	letter-spacing: 3px;
+	height: 40px;
 }
 input[type=radio], input[type=checkbox]{
 	display: inline-block;
 }
 input[type=submit]{
-	font-family: 'Indie Flower', cursive;
 	font-size:1.5em;
 	letter-spacing: 5px;
 	text-transform: uppercase; 
@@ -52,10 +59,14 @@ input[type=submit]{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 6px 0;
+	float: right;
+}
+select{
+	padding: 7px;
 }
 label{
-	font-family: 'Indie Flower', cursive;
 	font-size: 1.3em;
+	color: white;
 }
 label.label_styling{
 	padding-left: 10px;
@@ -64,14 +75,41 @@ label.label_styling{
 aside ul{
 	display: none;
 }
+aside ul li{
+	margin-top: 30px;
+}
+aside ul li p:first-child{
+	text-transform: capitalize;
+	color:white;
+}
+aside ul li p:last-child{
+	color:white;
+}
 aside{
 	width: 100%;
 	text-align: center;
 }
+aside:nth-of-type(1){
+	
+}
 aside:nth-of-type(2){
-	 z-index: 999;
+	display: none;
 }
 footer{
 	position: relative;
 	text-align: center;
+	color: white;
+}
+@media screen and (max-width: 768px){
+	label.label_styling{
+		display: none;
+	}
+}
+@media screen and (min-width: 768px){
+	aside ul{
+		display: block;
+	}
+	hr{
+		display: none;
+	}
 }

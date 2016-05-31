@@ -18,6 +18,7 @@
 </head>
 <body>
 	<header>
+		<p>header à faire</p>
 	    <nav>
 	        <ul>
 	            <li><img src="images/square.png" alt="logo"></li>
@@ -34,7 +35,7 @@
 	        </ul>
 	    </nav>
 	</header>
-	<div id="wrapper_first">
+	<div id="wrapper_first" class="col col-xs-12 col-sm-9 col-lg-9">
 		<header>
 			<h1>Réservation</h1>
 		</header>
@@ -42,28 +43,28 @@
 			<form id="content" action="">
 				<ul>
 					<li>
-						<label for="nom" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Nom :</label>
-						<input type="text" id="nom" required placeholder="Nom" class="col col-xs-9 col-sm-8 col-lg-7">
+						<label for="nom" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Nom :</label>
+						<input type="text" id="nom" required placeholder="Nom" class="col col-xs-12 col-sm-8 col-lg-7">
 					</li>
 					<li>
-						<label for="prenom" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Prenom :</label>
-						<input type="text" id="prenom" required placeholder="Prenom" class="col col-xs-9 col-sm-8 col-lg-7">
+						<label for="prenom" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Prenom :</label>
+						<input type="text" id="prenom" required placeholder="Prenom" class="col col-xs-12 col-sm-8 col-lg-7">
 					</li>
 					<li>
-						<label for="telephone" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Téléphone :</label>
-						<input type="tel" id="telephone" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" class="col col-xs-9 col-sm-8 col-lg-7">
+						<label for="telephone" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Téléphone :</label>
+						<input type="tel" id="telephone" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" class="col col-xs-12 col-sm-8 col-lg-7">
 					</li>
 					<li>
-						<label for="nombre" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Nombre de personnes :</label>
-						<input type="number" id="nombre" required min="1" max="30" class="col col-xs-9 col-sm-8 col-lg-7" placeholder="min:1 / max:30">
+						<label for="nombre" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Nombre de personnes :</label>
+						<input type="number" id="nombre" required min="1" max="30" class="col col-xs-12 col-sm-8 col-lg-7" placeholder="min:1 / max:30">
 					</li>
 					<li>
-						<label for="email" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Couriel :</label>
-						<input type="email" id="email" required placeholder="email@hotmail.com" class="col col-xs-9 col-sm-8 col-lg-7">
+						<label for="email" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Couriel :</label>
+						<input type="email" id="email" required placeholder="email@hotmail.com" class="col col-xs-12 col-sm-8 col-lg-7">
 					</li>
 					<li>
-						<label for="dej" class="label_styling col col-xs-3 col-sm-4 col-lg-5">Type de repas :</label>
-		                <input type="text" list="type_repas" id="repas" placeholder="Déjeuner , Dîner, etc" class="col col-xs-9 col-sm-8 col-lg-7">
+						<label for="dej" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Type de repas :</label>
+		                <input type="text" list="type_repas" id="repas" placeholder="Déjeuner , Dîner, etc" class="col col-xs-12 col-sm-8 col-lg-7">
 
 		                <datalist id="type_repas">
 		                    <option>Déjeuner</option>
@@ -74,8 +75,8 @@
 	                </li>
 					
 					<li>
-						<label class="label_styling col col-xs-3 col-sm-4 col-lg-5">Emplacement:</label>					
-						<select class="col col-xs-9 col-sm-8 col-lg-7">
+						<label class="label_styling col col-xs-0 col-sm-4 col-lg-5">Emplacement:</label>					
+						<select class="col col-xs-12 col-sm-8 col-lg-7">
 		                    <option>Terasse</option>
 		                    <option>Intérieur</option>
 		                </select>
@@ -97,12 +98,12 @@
 						<label for="recevoir" class="col col-xs-10 col-sm-10 col-lg-10">Recevoir des informations supplémentaires</label>
 					</li>
 					<li>
-						<label for="textarea" class="label_styling col col-xs-3">Allergies :</label>
-						<textarea name="textarea" id="textarea" class="col col-xs-9"></textarea>
+						<label for="textarea" class="label_styling col col-xs-0 col-sm-4">Allergies :</label>
+						<textarea name="textarea" id="textarea" class="col col-xs-12 col-sm-8" placeholder="Entrez vos allergies"></textarea>
 					</li>
 					
 				</ul>
-			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-12 col-lg-12" name="" />	
+			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-8 col-lg-12" name="" />	
 				
 		</form>
 		</section>
@@ -111,45 +112,46 @@
 	<hr>
 	<hr>
 	<!---->
-		<aside>
-            <ul>
-                <li>
-                    <p class="jour">dimanche</p>
-                    <p class="heure">8h00-15h00</p>
-                </li>
-                <li>
-                    <p class="jour">lundi</p>
-                    <p class="heure">8h00-17h00</p>
-                </li>
-                <li>
-                    <p class="jour">mardi</p>
-                    <p class="heure">8h00-17h00</p>
-                </li>
-                <li>
-                    <p class="jour">mercredi</p>
-                    <p class="heure">8h00-17h00</p>
-                </li>
-                <li>
-                    <p class="jour">jeudi</p>
-                    <p class="heure">8h00-18h00</p>
-                </li>
-                <li>
-                    <p class="jour">vendredi</p>
-                    <p class="heure">8h00-18h00</p>
-                </li>
-                <li>
-                    <p class="jour">samedi</p>
-                    <p class="heure">8h00-15h00</p>
-                </li>
-            </ul>
-        </aside>
-        <hr>
-        <aside>
-        	<a href="https://www.google.com/maps?ll=45.718432,-73.829351	&amp;z=11	&amp;t=m	&amp;hl=fr	&amp;gl=US	&amp;mapclient=embed	&amp;q=45%C2%B043%2734.3%22N+73%C2%B049%2722.7%22W@45.7261953,-73.8229832">My location</a>
-    	</aside>
+	<aside class="col col-sm-3 col-lg-3">
+        <ul>
+            <li>
+                <p class="jour">dimanche</p>
+                <p class="heure">8h00-21h00</p>
+            </li>
+            <li>
+                <p class="jour">lundi</p>
+                <p class="heure">8h00-20h00</p>
+            </li>
+            <li>
+                <p class="jour">mardi</p>
+                <p class="heure">8h00-20h00</p>
+            </li>
+            <li>
+                <p class="jour">mercredi</p>
+                <p class="heure">8h00-20h00</p>
+            </li>
+            <li>
+                <p class="jour">jeudi</p>
+                <p class="heure">8h00-22h00</p>
+            </li>
+            <li>
+                <p class="jour">vendredi</p>
+                <p class="heure">8h00-22h00</p>
+            </li>
+            <li>
+                <p class="jour">samedi</p>
+                <p class="heure">8h00-23h00</p>
+            </li>
+        </ul>
+    </aside>
+    <hr>
+    <hr>
+    <aside class="col col-xs-12 col-sm-3 col-lg-3">
+    	<a href="https://www.google.com/maps?ll=45.718432,-73.829351	&amp;z=11	&amp;t=m	&amp;hl=fr	&amp;gl=US	&amp;mapclient=embed	&amp;q=45%C2%B043%2734.3%22N+73%C2%B049%2722.7%22W@45.7261953,-73.8229832">Click ici pour me trouver</a>
+	</aside>
 	<hr>
 	<hr>	
-	<footer>
+	<footer class="col col-xs-12 col-sm-12 col-lg-12">
 	    <p>&copy;copyright benjamin et damon</p>
 	    <p>pour plus dinformation : facebook</p>
 	</footer>
