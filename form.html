@@ -9,12 +9,6 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-	<style>
-	    img{
-	        width: 100px;
-	        height: 100px;
-	    }
-	</style>
 </head>
 <body>
 	<header>
@@ -35,7 +29,18 @@
 	        </ul>
 	    </nav>
 	</header>
-	<div id="wrapper_first" class="col col-xs-12 col-sm-9 col-lg-9">
+	<aside class="col col-lg-3 first_aside">
+    	<!-- <a href="https://www.google.com/maps?ll=45.718432,-73.829351	&amp;z=11	&amp;t=m	&amp;hl=fr	&amp;gl=US	&amp;mapclient=embed	&amp;q=45%C2%B043%2734.3%22N+73%C2%B049%2722.7%22W@45.7261953,-73.8229832">Click ici pour me trouver</a> -->
+    	<h2>Nous retrouver:</h2>
+  		<p>Chalet des Érables</p>
+  		<p>384, Montée Gagnon (Route 335)</p>
+  		<p>Sainte-Anne-des-Plaines (Québec) J0N 1H0</p>
+  		<p>Téléphone : 450-478-0822</p>
+  		<p>Télécopieur : 450-478-8094</p>
+  		<p>Courriel : chaletdeserables@sympatico.ca</p>
+  		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div><div id='gmap_canvas' class="col col-lg-12"></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:8,center:new google.maps.LatLng(45.7260694,-73.82316800000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.7260694,-73.82316800000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Chalet des érables</strong><br>384, Montée Gagnon<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	</aside>
+	<div id="wrapper_first" class="col col-xs-12 col-sm-9 col-lg-6">
 		<header>
 			<h1>Réservation</h1>
 		</header>
@@ -98,12 +103,12 @@
 						<label for="recevoir" class="col col-xs-10 col-sm-10 col-lg-10">Recevoir des informations supplémentaires</label>
 					</li>
 					<li>
-						<label for="textarea" class="label_styling col col-xs-0 col-sm-4">Allergies :</label>
-						<textarea name="textarea" id="textarea" class="col col-xs-12 col-sm-8" placeholder="Entrez vos allergies"></textarea>
+						<label for="textarea" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Allergies :</label>
+						<textarea name="textarea" id="textarea" class="col col-xs-12 col-sm-8 col-lg-7" placeholder="Entrez vos allergies"></textarea>
 					</li>
 					
 				</ul>
-			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-8 col-lg-12" name="" />	
+			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-8 col-lg-7" name="" />	
 				
 		</form>
 		</section>
@@ -112,8 +117,9 @@
 	<hr>
 	<hr>
 	<!---->
-	<aside class="col col-sm-3 col-lg-3">
+	<aside class="col col-sm-3 col-lg-3 second_aside">
         <ul>
+        	<h2>Horaire:</h2>
             <li>
                 <p class="jour">dimanche</p>
                 <p class="heure">8h00-21h00</p>
@@ -146,11 +152,6 @@
     </aside>
     <hr>
     <hr>
-    <aside class="col col-xs-12 col-sm-3 col-lg-3">
-    	<a href="https://www.google.com/maps?ll=45.718432,-73.829351	&amp;z=11	&amp;t=m	&amp;hl=fr	&amp;gl=US	&amp;mapclient=embed	&amp;q=45%C2%B043%2734.3%22N+73%C2%B049%2722.7%22W@45.7261953,-73.8229832">Click ici pour me trouver</a>
-	</aside>
-	<hr>
-	<hr>	
 	<footer class="col col-xs-12 col-sm-12 col-lg-12">
 	    <p>&copy;copyright benjamin et damon</p>
 	    <p>pour plus dinformation : facebook</p>
