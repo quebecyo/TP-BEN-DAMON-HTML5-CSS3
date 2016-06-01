@@ -173,13 +173,13 @@ tbody th{
 /*changer la couleur du header*/
 @keyframes whiteblack {
     0% {
-        color: yellow;
+        color: brown;
     }
     50% {
         color: white;
     }
     100%{
-    	color: yellow;
+    	color: brown;
     }
 }
 td{
@@ -194,7 +194,6 @@ td{
 	padding-top: 10px;
 }
 .td_head table tr td{
-	font-size: 0.7em;
 }
 .td_head table tr td img{
 	width: 260px;
@@ -202,6 +201,14 @@ td{
 }
 #second_table{
 	text-align: center;
+}
+#second_table td:last-child{
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+video{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 50px;
 }
 /*
  *
