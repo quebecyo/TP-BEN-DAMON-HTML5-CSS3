@@ -1,9 +1,15 @@
 aside, div, section, header, footer, nav {
 	display: block;
 }
+/*
+ *
+ */
 *{
 	box-sizing: border-box;
 }
+/*
+ *
+ */
 header:first-child{
 	width: 100%;
 	background-image:url("../images/tree.jpg");
@@ -13,12 +19,21 @@ header:first-child{
 	border-radius: 10px;
 	display: none;
 }
+/*
+ *
+ */
 header nav{}
+/*
+ *
+ */
 h1{
 	padding: 10px;
 	font-size: 2em;
 	text-align: center;
 }
+/*
+ *
+ */
 body{
 	font-family: 'Indie Flower', cursive;
 	background-image: url("../images/background.jpg");
@@ -27,6 +42,9 @@ body{
 	background-attachment: fixed;
 	color: white;
 }
+/*
+ *
+ */
 #wrapper_first header{
 	text-align: center;
 	height: 40px;
@@ -40,6 +58,9 @@ body{
 #wrapper_first section li{
 	height: 60px;
 }
+/*
+ *
+ */
 input, select, textarea{
 	border-radius: 5px;
 	font-size: 1.2em;
@@ -64,6 +85,9 @@ input[type=submit]{
 	padding: 6px 0;
 	float: right;
 }
+/*
+ *
+ */
 select{
 	padding: 6px;
 }
@@ -74,6 +98,9 @@ label.label_styling{
 	padding-left: 10px;
 	margin: 0;
 }
+/*
+ *
+ */
 aside ul{
 	display: none;
 }
@@ -109,33 +136,83 @@ aside.first_aside p:nth-of-type(1),aside.first_aside p:nth-of-type(4){
 aside.last_aside{
 	display: none;
 }
+/*
+ *
+ */
 #gmap_canvas{
 	height: 300px;
 }
+/*
+ * page description tableaux section
+ */
 table{
 	width: 100%;
 	text-align: center;
+	font-size: 16px;
+}
+/*
+ *
+ */
+caption{
+	font-size: 4em;
+	padding: 20px 0;
+}
+thead tr th{
+	font-size: 2em;
+	padding: 20px 0;
+	color: rgb(150,150,150);
+}
+/*
+ *
+ */
+tbody th{
+	font-size: 2em;
+	animation: 1s whiteblack infinite;
+	padding: 20px 0;
+}
+/*changer la couleur du header*/
+@keyframes whiteblack {
+    0% {
+        color: yellow;
+    }
+    50% {
+        color: white;
+    }
+    100%{
+    	color: yellow;
+    }
 }
 td{
 	margin-bottom: 5px;
 }
+/*
+ *
+ */
 .td_head{
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-bottom: 20px;
-	padding-bottom: 50px;
+	padding-top: 10px;
 }
 .td_head table tr td{
 	font-size: 0.7em;
 }
 .td_head table tr td img{
-	width: 80%;
-	margin-left: 10%;
-	height: 200px;
+	width: 260px;
+	height: 150px;
 }
+#second_table{
+	text-align: center;
+}
+/*
+ *
+ */
 footer{
 	position: relative;
 	text-align: center;
 }
+/*
+ *
+ */
 @media screen and (max-width: 768px){
 	label.label_styling{
 		display: none;
@@ -149,8 +226,11 @@ footer{
 	}
 	input, select, textarea{
 	font-size: 1.5em;
+	}
 }
-}
+/*
+ *
+ */
 @media screen and (min-width: 768px){
 	aside ul{
 		display: block;
@@ -164,6 +244,9 @@ footer{
 		font-size: 1.5em;
 	}
 }
+/*
+ *
+ */
 @media screen and (min-width: 1200px){
 	body{
 		font-size: 1.2em;
@@ -178,6 +261,7 @@ footer{
 	aside.first_aside{
 		display: block;
 		margin-top: 100px;
+		overflow: hidden;
 	}
 	aside ul li{
 		margin-top: 35px;
