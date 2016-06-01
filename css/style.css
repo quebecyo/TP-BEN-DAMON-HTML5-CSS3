@@ -114,6 +114,18 @@ aside.last_aside{
 }
 table{
 	width: 100%;
+	text-align: center;
+}
+td{
+	margin-bottom: 5px;
+}
+.td_head{
+	font-size: 2em;
+	margin-bottom: 30px;
+	padding-bottom: 100px;
+}
+.td_head table tr td{
+	font-size: 0.7em;
 }
 footer{
 	position: relative;
