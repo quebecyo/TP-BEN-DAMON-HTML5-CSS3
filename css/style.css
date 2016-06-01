@@ -112,6 +112,9 @@ aside.last_aside{
 #gmap_canvas{
 	height: 300px;
 }
+table{
+	width: 100%;
+}
 footer{
 	position: relative;
 	text-align: center;
