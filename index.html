@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>premiere page en html5</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        img{
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/initialize.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header>
     <nav>
         <ul>
-            <li><img src="images/square.png" alt="logo"></li>
+            <li><img src="images/logo.png" alt="logo"></li>
             <li>
                 <form>
                     <input type="search">
                     <input type="submit" value="rechercher">
                 </form>
             </li>
-            <li><a href="">categgorie 1</a></li>
-            <li><a href="">categgorie 2</a></li>
-            <li><a href="">categgorie 3</a></li>
-            <li><a href=""><img src="images/square.png" alt="fb"></a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Produit</a></li>
+            <li><a href="form.html">Réservation</a></li>
+            <li><a href="https:/www.facebook.com/"><img src="images/like-fb.png" alt="fb"></a></li>
         </ul>
     </nav>
 </header>
@@ -37,11 +32,11 @@
         <h1>Titre du tp</h1>
         <div id="slider">
             <figure>
-                <img src="images/square.png" alt="">
-                <img src="images/square.png" alt="">
-                <img src="images/square.png" alt="">
-                <img src="images/square.png" alt="">
-                <img src="images/square.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </figure>
         </div>
         <aside>
@@ -79,7 +74,7 @@
     </section>
     <section>
         <article>
-            <img src="images/square.png" alt="">
+            <img src="" alt="">
             <h2>nom</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet posuere tellus, sed sodales velit
                 sodales quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean et lacus augue.
@@ -88,7 +83,7 @@
                 congue pharetra. Nulla vulputate euismod vulputate.</p>
         </article>
         <article>
-            <img src="images/square.png" alt="">
+            <img src="" alt="">
             <h2>nom</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet posuere tellus, sed sodales velit
                 sodales quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean et lacus augue.
@@ -97,7 +92,7 @@
                 congue pharetra. Nulla vulputate euismod vulputate.</p>
         </article>
         <article>
-            <img src="images/square.png" alt="">
+            <img src="" alt="">
             <h2>nom</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet posuere tellus, sed sodales velit
                 sodales quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean et lacus augue.
@@ -107,7 +102,7 @@
         </article>
     </section>
     <aside>
-        <a href="">lien vers google map</a>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div><div id='gmap_canvas' class="col col-lg-12"></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:8,center:new google.maps.LatLng(45.7260694,-73.82316800000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.7260694,-73.82316800000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Chalet des érables</strong><br>384, Montée Gagnon<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
     </aside>
 </main>
 
