@@ -57,6 +57,7 @@ body{
 }
 #wrapper_first section li{
 	height: 60px;
+	margin-top: 40px;
 }
 /*
  *
@@ -257,7 +258,7 @@ footer{
 	hr{
 		display: none;
 	}
-	aside ul h2{
+	aside.second_aside h2{
 
 		margin-top: 40px;
 		font-size: 1.5em;
@@ -295,7 +296,7 @@ footer{
 		margin-top: 35px;
 		font-size: 1.3em;
 	}
-	aside ul h2{
+	aside.second_aside h2{
 		margin-top: 80px;
 		font-size: 2em;
 	}

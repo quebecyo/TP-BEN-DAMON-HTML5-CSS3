@@ -28,7 +28,7 @@
 			<li><a href="index.html">Accueil</a></li>
 			<li><a href="catalogue.html">Produit</a></li>
 			<li><a href="form.html">Réservation</a></li>
-			<li><a href="https:/www.facebook.com/"><img src="images/like-fb.png" alt="fb"></a></li>
+			<li><a href="https://www.facebook.com/"><img src="images/like-fb.png" alt="fb"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -44,11 +44,11 @@
   		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div><div id='gmap_canvas' class="col col-lg-12"></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:8,center:new google.maps.LatLng(45.7260694,-73.82316800000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.7260694,-73.82316800000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Chalet des érables</strong><br>384, Montée Gagnon<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 	</aside>
 	<div id="wrapper_first" class="col col-xs-12 col-sm-9 col-lg-6">
-		<div col col-xs-12 col-sm-12 col-lg-12>
+		<div class="col col-xs-12 col-sm-12 col-lg-12">
 			<h1>Réservation</h1>
 		</div>
-		<section class="main">
-			<form id="content" action="">
+		<section>
+			<form id="content" action="confirmation.html">
 				<ul>
 					<li>
 						<label for="nom" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Nom :</label>
@@ -71,7 +71,7 @@
 						<input type="email" id="email" required placeholder="email@hotmail.com" class="col col-xs-12 col-sm-8 col-lg-7">
 					</li>
 					<li>
-						<label for="dej" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Type de repas :</label>
+						<label for="repas" class="label_styling col col-xs-0 col-sm-4 col-lg-5">Type de repas :</label>
 		                <input type="text" list="type_repas" id="repas" placeholder="Déjeuner , Dîner, etc" class="col col-xs-12 col-sm-8 col-lg-7">
 
 		                <datalist id="type_repas">
@@ -111,7 +111,7 @@
 					</li>
 					
 				</ul>
-			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-8 col-lg-7" name="" />	
+			<input type="submit" value="Réserver" class="col col-xs-12 col-sm-8 col-lg-7" name="reserver" />	
 				
 		</form>
 		</section>
@@ -121,8 +121,8 @@
 	<hr>
 	<!---->
 	<aside class="col col-sm-3 col-lg-3 second_aside">
+       <h2>Horaire:</h2>
         <ul>
-        	<h2>Horaire:</h2>
             <li>
                 <p class="jour">dimanche</p>
                 <p class="heure">8h00-21h00</p>
